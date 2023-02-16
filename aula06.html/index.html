@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: burlywood;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo usar <strong>DOM</strong> em JS</p>
+    <div><strong>Clique em mim</strong></div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        //com get...posso selecionar todos os componentes..
+        //Selecionando o primeiro parágrafo, colar entre colchete a posição do parágrafo que deseja...
+        document.write(p1.innerText)
+        //innerText - replicar o texto que esta dentro do primeiro parágrafo
+    </script>
+</body>
+</html>
